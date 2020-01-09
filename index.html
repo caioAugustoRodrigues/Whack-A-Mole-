@@ -84,7 +84,7 @@
     score = 0;
 
     peep();
-    setTimeout(() => timeUp = true, 2000);
+    setTimeout(() => timeUp = true, 5000);
   }
 
   function bonk(e) {
@@ -95,6 +95,7 @@
   }
 
   moles.forEach(mole => mole.addEventListener('click', bonk));
+  moles.forEach(mole => mole.addEventListener('touchstart', bonk));
 </script>
 </body>
 </html>
